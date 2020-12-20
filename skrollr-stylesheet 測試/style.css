@@ -1,0 +1,27 @@
+/* 在這邊定義好 skrollr 的 @keyfames（要記得加上 -skrollr 的前綴） */
+@-skrollr-keyframes test1 {
+  0 {
+    transform:translateX(0px) rotate(0deg);
+  }
+  300 {
+    transform:translateX(500px) rotate(250deg);
+  }
+  500 {
+    transform:translateY(-100px) rotate(-100deg);
+  }
+}  
+
+#foo {
+  position: absolute;
+  top: 500px;
+  border: 1px solid #000;
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  /* 然後把 animation 的屬性插在這裡（一樣要記得加上 -skrollr 的前綴） */
+  -skrollr-animation-name: test1;
+}
+
+body {
+  height: 2000px;
+}

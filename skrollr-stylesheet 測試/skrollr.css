@@ -1,0 +1,17 @@
+/* 這個 CSS 是我測試用的，不用太在意 */
+
+@-skrollr-keyframes test1 {
+    0 {
+      transform:translateX(0px) rotate(0deg);
+    }
+    300 {
+      transform:translateX(500px) rotate(250deg);
+    }
+    500 {
+      transform:translateY(-100px) rotate(-100deg);
+    }
+}  
+  
+#foo {
+    -skrollr-animation-name: test1;
+}  

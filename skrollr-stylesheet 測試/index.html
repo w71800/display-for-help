@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- skrollr.stylesheets.min.js 會輸出 #foo 的 HTML 如下： -->
+            <!-- <div id="foo" data-0="transform: translateX(0px) rotate(0deg)"
+                          data-300="transform: translateX(500px) rotate(250deg)"
+                          data-500="transform:translateY(-100px) rotate(-100deg)"></div> -->
+
+    <div id="foo"></div>
+    
+    <link rel="stylesheet" href="style.css" data-skrollr-stylesheet="data-skrollr-stylesheet"/>
+    <!-- 在這邊引入資料夾中的skrollr.stylesheets.min.js -->
+    <script type="text/javascript" src="skrollr-stylesheets-master/dist/skrollr.stylesheets.min.js"></script>
+    <script type="text/javascript" src="skrollr-master/dist/skrollr.min.js"></script>
+    <script type="text/javascript">var s = skrollr.init()</script>
+  </body>
+</html>

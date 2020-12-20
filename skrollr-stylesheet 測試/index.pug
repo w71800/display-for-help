@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+    body
+        
+
+        #foo
+
+        //- skrollr.stylesheets.min.js 會輸出 #foo 的 HTML 如下：
+            //- #foo(data-0="transform: translateX(0px) rotate(0deg)"
+            //-      data-300="transform: translateX(500px) rotate(250deg)"
+                     data-500="transform:translateY(-100px) rotate(-100deg)"
+
+        link(rel="stylesheet", href="style.css" data-skrollr-stylesheet)    
+        script(type="text/javascript" src="skrollr-stylesheets-master/dist/skrollr.stylesheets.min.js")
+        //- link(rel="stylesheet", href="skrollr.css" data-skrollr-stylesheet)    
+        script(type="text/javascript" src="skrollr-master/dist/skrollr.min.js")
+        script(type="text/javascript") var s = skrollr.init()
