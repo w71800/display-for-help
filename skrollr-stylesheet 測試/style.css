@@ -1,4 +1,4 @@
-/* 在這邊定義好 skrollr 的 @keyfames（要記得加上 -skrollr 的前綴） */
+/* 在這邊定義好 skrollr 的 @keyframes（要記得加上 -skrollr 的前綴） */
 @-skrollr-keyframes test1 {
   0 {
     transform:translateX(0px) rotate(0deg);
